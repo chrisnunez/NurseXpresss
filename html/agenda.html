@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Agenda</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="../assets/style.css" rel="stylesheet">
+    <link href="../assets/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<navbar class="navbar">
+    <div class="logo">
+        <h1>NurseXpress</h1>
+    </div>
+
+    <div class="navlinks">
+        <a href="../index.html" class="navLink">Home</a>
+        <a class="navLink" id="popup-login">Log In/Register</a>
+        <div class="log-container popup-form" id="popup-form">
+            <div class="titles">
+                <div class="title login">Login</div>
+            </div>
+            <div class="container-forms">
+                <div class="inner-form">
+                    <form action="#" class="login" id="login" method="post" enctype="multipart/form-data" autocomplete="on">
+                        <input type="text" class="field" placeholder="Email" required>
+                        <input type="password" class="field" placeholder="Password" required>
+                        <div class="forgot-pwd"><a href="#">Forgot password?</a></div>
+                        <input type="submit" class="field" value="Login">
+                        <div class="register-link">Not a member? <a href="../html/register.html"> Register now</a> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <a href="./about.html" class="navLink">About</a>
+        <a href="./contact.html" class="navLink">Contact</a>
+    </div>
+</navbar>
+
+<body>
+
+
+
+    
+
+    <section class="container" id="scheduleGrid">
+        <div class="service-grid">
+            <h4>Here are the nurse's available schedules:</h4>
+            <!-- Insert calendar -->
+        </div>
+    </section>
+
+    <script src="../js/index.js"></script>
+    <section class="container" id="calendar">
+        <div class="card">
+            <div class="calendar-toolbar">
+                <button class="prev month-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="current-month"></div>
+                <button class="next month-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="calendar">
+                <div class="weekdays">
+                    <div class="weekday-name">Sa</div>
+                    <div class="weekday-name">Su</div>
+                    <div class="weekday-name">Mo</div>
+                    <div class="weekday-name">Tu</div>
+                    <div class="weekday-name">We</div>
+                    <div class="weekday-name">Th</div>
+                    <div class="weekday-name">Fr</div>
+                </div>
+                    <div class="calendar-days"></div>
+                </div>
+                <div class="goto-buttons">
+                    <button type="button" class="btn prev-year">Prev Year</button>
+                    <button type="button" class="btn today">Today</button>
+                    <button type="button" class="btn next-year">Next Year</button>
+                </div>
+            </div> 
+    </section>
+
+    <script src="../assets/agenda.js"></script>
+
+</body>
+</html>
