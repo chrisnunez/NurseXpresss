@@ -1,7 +1,7 @@
 const User = require('./User');
 const Cities = require('./Cities');
 const Employee = require('./Employee');
-const Services = require('./services');
+const Services = require('./Services');
 const Appointment = require('./Appointments');
 const ServicesProvided = require('./ServicesProvided');
 
